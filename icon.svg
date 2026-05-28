@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#FF0000"/>
+  <!-- Play triangle -->
+  <polygon points="50,40 50,88 92,64" fill="white"/>
+  <!-- Text lines (transcript symbol) -->
+  <rect x="30" y="98" width="68" height="5" rx="2.5" fill="white" opacity="0.85"/>
+  <rect x="30" y="108" width="50" height="5" rx="2.5" fill="white" opacity="0.6"/>
+</svg>

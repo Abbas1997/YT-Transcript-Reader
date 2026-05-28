@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT Transcript Reader</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <header>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="4" y="4" width="16" height="3" rx="1.5" />
+            <rect x="4" y="10" width="16" height="3" rx="1.5" />
+            <rect x="4" y="16" width="10" height="3" rx="1.5" />
+        </svg>
+        Transcripts
+    </header>
+
+    <div id="empty" class="empty hidden">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+            <rect x="4" y="4" width="16" height="3" rx="1.5" />
+            <rect x="4" y="10" width="16" height="3" rx="1.5" />
+            <rect x="4" y="16" width="10" height="3" rx="1.5" />
+        </svg>
+        <p>No transcripts saved yet.</p>
+        <p class="hint">Visit a YouTube video and click the <strong>Transcript</strong> button.</p>
+    </div>
+
+    <ul id="list"></ul>
+
+    <footer>
+        <button id="open-reader">Open Reader</button>
+        <p class="support-msg">
+            If you are facing problems, please email the developer at <a href="mailto:[haiderextensions97@gmail.com]">[haiderextensions97@gmail.com]</a>.
+        </p>
+    </footer>
+
+
+    <script src="storage.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

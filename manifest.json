@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "YT Transcript Reader",
+  "version": "1.0.0",
+  "description": "Save and read YouTube video transcripts with notes.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["reader.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
