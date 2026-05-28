@@ -20,5 +20,5 @@ All transcripts saved locally in your browser — no account, no server, no data
 Accessible from the extension popup, where all your saved transcripts are listed
 Reading progress bar and estimated reading time for every transcript
 
-[
+[YT Transcript Reader
 ](https://chromewebstore.google.com/detail/yt-transcript-reader/lfgamcglkmhaebadgobklmmicajhmpdd)
